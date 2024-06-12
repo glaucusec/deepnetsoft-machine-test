@@ -19,8 +19,8 @@ export default function Banner() {
         </h1>
         <p className="text-slate-300">
           Please take a look at our menu featuring food, drinks, and brunch. If
-          you'd like to place an order, use the "Order Online" button located
-          below the menu.
+          you&apos;d like to place an order, use the &quot;Order Online&quot;
+          button located below the menu.
         </p>
       </div>
     </div>
