@@ -9,7 +9,6 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import FooterCardLayout from "./FooterCardLayout";
-import FooterCardWrapper from "./FooterCardWrapper";
 import ContentCardWrapper from "../ContentCardWrapper";
 import Image from "next/image";
 
@@ -18,7 +17,7 @@ export default function Footer() {
     <React.Fragment>
       <ContentCardWrapper>
         <FooterCardLayout>
-          <FooterCardWrapper>
+          <div className="order-last lg:order-1 relative w-full p-2 flex flex-col items-center justify-center border-2 border-gray-600 rounded-xl gap-2">
             <h2 className="text-blue-600">CONNECT WITH US</h2>
             <section className="flex flex-row items-center gap-1">
               <IconDeviceLandlinePhone size={16} stroke={1} color="#ca8a04" />
@@ -28,8 +27,8 @@ export default function Footer() {
               <IconMail size={16} stroke={1} color="#ca8a04" />
               <p className="">email@42barandgrill.com</p>
             </section>
-          </FooterCardWrapper>
-          <FooterCardWrapper>
+          </div>
+          <div className="relative lg:order-2 w-full p-2 flex flex-col items-center justify-center border-2 border-gray-600 rounded-xl gap-2">
             <Image
               className="absolute top-0 -translate-y-10 w-[72px] h-[72px] bg-black"
               src="/images/logo-square.png"
@@ -46,20 +45,20 @@ export default function Footer() {
               </span>
             </h2>
             <div className="flex flex-row gap-4">
-              <IconBrandFacebook  height={12} width={12} />
+              <IconBrandFacebook height={12} width={12} />
               <IconBrandTwitter height={12} width={12} />
-              <IconBrandYoutube  height={12} width={12}/>
+              <IconBrandYoutube height={12} width={12} />
               <IconBrandInstagram height={12} width={12} />
             </div>
-          </FooterCardWrapper>
-          <FooterCardWrapper>
+          </div>
+          <div className="relative lg:order-3 w-full p-2 flex flex-col items-center justify-center border-2 border-gray-600 rounded-xl gap-2">
             <h2 className="text-blue-600">FIND US</h2>
             <section className="flex flex-row items-center gap-1">
               <IconMapPin size={16} stroke={1} color="#ca8a04" />
               <p className="">327 Memorial Dr SE, Atlanta. </p>
               <p className="">CA 30312, USA</p>
             </section>
-          </FooterCardWrapper>
+          </div>
         </FooterCardLayout>
       </ContentCardWrapper>
       <div className="p-4 flex flex-cols justify-between bg-neutral-900">

@@ -8,7 +8,7 @@ export default function ServiceBanner() {
       <div className="relative flex flex-col items-center justify-center gap-4">
         <div className="flex lg:flex-row flex-col-reverse items-center">
           <div className="lg:mr-4 mb-4 lg:mb-0 lg:border-r lg:border-gray-300 lg:pr-4"></div>
-          <MenuButton text="ORDER ONLINE" />
+          <MenuButton clicked={true} text="ORDER ONLINE" />
           <div className="lg:ml-4 mb-4 lg:mb-0 lg:border-l lg:border-gray-300 lg:pl-4"></div>
         </div>
         <div className="grid grid-cols-3 bg-stone-700 p-2">

@@ -13,8 +13,8 @@ export default function ItemsBanner() {
 
       <div className="relative text-white flex flex-row p-4 gap-2">
         <MenuButton text="FOOD" />
-        <MenuButton text="DRINKS"/>
-        <MenuButton text="BRUNCH"/>
+        <MenuButton clicked={true} text="DRINKS" />
+        <MenuButton text="BRUNCH" />
       </div>
     </div>
   );
