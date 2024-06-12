@@ -1,7 +1,7 @@
 import React from "react";
 import MenuButton from "./buttons/MenuButton";
 
-export default function Menu() {
+export default function ItemsBanner() {
   return (
     <div
       style={{
