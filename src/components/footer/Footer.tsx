@@ -3,10 +3,15 @@ import {
   IconDeviceLandlinePhone,
   IconMail,
   IconMapPin,
+  IconBrandFacebook,
+  IconBrandTwitter,
+  IconBrandYoutube,
+  IconBrandInstagram,
 } from "@tabler/icons-react";
 import FooterCardLayout from "./FooterCardLayout";
 import FooterCardWrapper from "./FooterCardWrapper";
 import ContentCardWrapper from "../ContentCardWrapper";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -25,7 +30,27 @@ export default function Footer() {
             </section>
           </FooterCardWrapper>
           <FooterCardWrapper>
-            <h2 className="text-blue-600">CONNECT WITH US</h2>
+            <Image
+              className="absolute top-0 -translate-y-10 w-[72px] h-[72px] bg-black"
+              src="/images/logo-square.png"
+              width={72}
+              height={72}
+              alt="logo"
+            />
+            <h2 className="flex flex-col">
+              <span className="text-blue-600">
+                DEEP{" "}
+                <span className="text-white">
+                  NET <span className="text-slate-600">SOFT</span>
+                </span>
+              </span>
+            </h2>
+            <div className="flex flex-row gap-4">
+              <IconBrandFacebook  height={12} width={12} />
+              <IconBrandTwitter height={12} width={12} />
+              <IconBrandYoutube  height={12} width={12}/>
+              <IconBrandInstagram height={12} width={12} />
+            </div>
           </FooterCardWrapper>
           <FooterCardWrapper>
             <h2 className="text-blue-600">FIND US</h2>
@@ -37,7 +62,7 @@ export default function Footer() {
           </FooterCardWrapper>
         </FooterCardLayout>
       </ContentCardWrapper>
-      <div className="p-1 flex flex-cols justify-between bg-neutral-900">
+      <div className="p-4 flex flex-cols justify-between bg-neutral-900">
         <section className="text-xs">
           2024 42 Bar & Grill. Developed by Deepnetsoft Solutions
         </section>

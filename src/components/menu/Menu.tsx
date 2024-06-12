@@ -2,6 +2,7 @@ import React from "react";
 import MenuWrapper from "./MenuItemWrapper";
 import MenuLayout from "./MenuLayout";
 import MenuItem from "./MenuItem";
+import MenuItem2 from "./MenuItem2";
 import HookahMenu from "./HookahMenu";
 
 export default function Menu() {
@@ -11,7 +12,7 @@ export default function Menu() {
         <MenuItem />
       </MenuWrapper>
       <MenuWrapper>
-        <MenuItem />
+        <MenuItem2 />
       </MenuWrapper>
       <MenuWrapper>
         <HookahMenu />
